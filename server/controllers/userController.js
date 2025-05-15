@@ -124,6 +124,7 @@ const payment = async (req, res) => {
                 return res.json({ success: false, message: error.message });
             }
             res.json({ success: true, order });
+            console.log(order);
         });
 
     } catch (error) {
